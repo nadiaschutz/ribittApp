@@ -1,0 +1,8 @@
+{
+  "name": "ribittApp",
+  "app_id": "e938a40e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
