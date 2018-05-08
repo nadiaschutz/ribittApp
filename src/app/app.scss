@@ -14,3 +14,44 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.statusbar {
+    background-color: black;
+}
+
+
+ion-header, .toolbar-background-ios{
+    background-color: #fe871d !important;
+}
+
+.toolbar-ios{
+    padding: none;
+}
+.tabs-ios[tabsPlacement=top] .tabbar {
+    border-top: none;
+    border-bottom: none;
+    top: 79px; 
+}
+
+.tabbar{
+    opacity:1;
+}
+
+.bottomTabs{
+    z-index:1;
+}
+
+.tabbar a[aria-selected=true] {
+    border-bottom: 3px;
+    border-style: solid;    
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border: none;
+}
+
+ion-fab#bottom-button {
+    text-align: center !important;
+    width: 100% !important;
+}

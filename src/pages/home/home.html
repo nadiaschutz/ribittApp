@@ -1,14 +1,36 @@
-<ion-header>
+<ion-header color="primary">
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-item color="primary">
+         <ion-searchbar (ionInput)="searchBar($event)" id="head-left-top" ></ion-searchbar>
+          <!--<ion-item id="head-right-top" >-->
+            <ion-item id="head-right-top" *ngFor="let p of points" >
+             <span class="myPointsNum" class="text-center medium" >{{this.p}}</span>
+             <!--<span class="myPointsNum" class="text-center medium" >100</span>-->
+             <p class="myPointsText" class="text-center small" >Points</p>
+          </ion-item>
+         </ion-item>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <p class="hiText">Hi there!</p>
+  <p class="hiText">Local spots for you today</p>
+  
+
+  <ion-slides class="image-slider" loop="true" slidesPerView="2">
+      <ion-slide *ngFor="let user of users" >
+          <img [src]="this.user.businessImage" (click)="doAlert()" class="thumb-img">
+          <p class="business-name">{{this.user.businessName}}</p>
+      </ion-slide>
+  </ion-slides>
+  
+  
+  <ion-fab bottom id="bottom-button">
+   <button ion-button round (click)="goToBlankPage()">Click me</button>
+  </ion-fab>
+  
+  
+
+
+  
 </ion-content>

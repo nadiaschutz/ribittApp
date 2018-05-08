@@ -1,3 +1,96 @@
-page-home {
+.small{
+    font-size: 12px !important;
+}
 
+.medium{
+    font-size: 22px !important;
+}
+
+/*head*/
+
+$searchbar-ios-input-search-icon-color:   white;
+
+ion-content{
+    padding: 0 !important;
+}
+
+ion-app.md [padding] .scroll-content, ion-app.ios [padding] .scroll-content{
+    padding: 12px;
+}
+
+#head-right-top {
+    float: right;
+    width: 20%;
+    background-color: transparent; 
+}
+#head-left-top{
+    float: left;
+    width: 80%;
+}
+
+
+.label-md,.label-ios {
+    margin: 3px 8px 2px 0;
+    text-align: center;
+}
+.item-ios{
+    color: white;
+}
+
+.item-ios.item-block .item-inner, .item-md.item-block .item-inner{
+    border: none;
+}
+ion-header.header.header-md{
+ box-shadow:none;   
+}
+
+.item-md, .item-ios{
+    padding: 0 !important;
+}
+
+
+
+#head-left-top {
+    float: left;
+   /* width: 80%;*/
+}
+.searchbar-ios{
+    background: none;
+}
+
+
+/*horizontal slider*/
+.hiText{
+    margin-top: 5px;
+}
+
+ion-slide.swiper-slide{
+    width: 70%;
+    height: 145px;
+}
+ion-slides{
+    height: auto;
+}
+
+.thumb-img{
+    padding: 10px;
+    border-radius: 15px;
+    width: 10em;
+    max-height: 100px;
+}
+
+.swiper-slide img{
+    max-height: none !important;
+    height: 120px;
+    padding: 2px;
+}
+
+.business-name{
+    font-size: 12px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.slide-zoom{
+    text-align: left;
 }
